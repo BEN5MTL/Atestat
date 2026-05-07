@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact și feedback pentru site-ul Hochei pe Gheață." />
+    <title>Contact & Feedback - Hochei pe Gheață</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span>Hochei pe Gheață</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="learn.html">Învață</a></li>
+                    <li><a href="history.html">Istorie & Fapte</a></li>
+                    <li><a href="professional.html">Hochei Profesional</a></li>
+                    <li><a href="teams.html">Echipe & Quiz</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-title">
+            <h1>Contact & Feedback</h1>
+        </div>
+        <section class="section-alt">
+            <div class="container">
+                <p class="section-intro">Contactează-ne sau lasă-ne feedback-ul tău despre site</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Contactează-ne</h2>
+                        <p>Avem întrebări sau sugestii? Nu ezita să ne contactezi!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h3>📧 Email</h3>
+                                <p><a href="mailto:beniaminbutar55@gmail.com">beniaminbutar55@gmail.com</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>📱 Telefon</h3>
+                                <p>+40 748 490 792</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback-section">
+                        <h2>Feedback</h2>
+                        <p>Opinia ta contează! Spune-ne cum putem îmbunătăți site-ul.</p>
+                        <form class="contact-form" action="https://formspree.io/f/xpznqryq" method="POST" id="feedbackForm">
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="hidden" name="_subject" value="Feedback Hochei Website">
+                            <textarea name="message" rows="5" placeholder="Mesaj" required></textarea>
+                            <button type="submit" class="btn primary">Trimite</button>
+                            <small id="feedbackInfo" class="feedback-info"></small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Hochei pe Gheață.</p>
+            <nav class="footer-nav">
+                <a href="index.html">Acasă</a>
+                <a href="learn.html">Învață</a>
+                <a href="history.html">Istorie</a>
+                <a href="professional.html">Profesional</a>
+                <a href="teams.html">Echipe</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

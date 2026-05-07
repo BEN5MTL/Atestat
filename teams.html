@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Echipe din România și quiz interactiv despre hochei." />
+    <title>Echipe Românești și Quiz Hochei</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span>Hochei pe Gheață</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="learn.html">Învață</a></li>
+                    <li><a href="history.html">Istorie & Fapte</a></li>
+                    <li><a href="professional.html">Hochei Profesional</a></li>
+                    <li><a href="teams.html" class="active">Echipe & Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-title">
+            <h1>Echipe Românești și Quiz</h1>
+        </div>
+        <section class="section-alt" id="teams">
+            <div class="container">
+                <p class="section-intro">Descoperă echipe din România și testează-ți cunoștințele</p>
+                <h2>Echipe din România</h2>
+                <p class="section-subtitle">Principalele echipe de hochei din țara noastră</p>
+                <div class="teams-grid">
+                    <div class="team-card">
+                        <div class="team-image"><img src="images/SfG.png" alt="ACSH" style="width:80px; height:80px; object-fit:contain;"></div>
+                        <div class="team-header">
+                            <h3>ACSH Gheorgheni</h3>
+                            <p>Roșu și alb</p>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-stats">
+                                <div class="stat">
+                                    <div class="stat-value">14</div>
+                                    <p>Victorii</p>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">2</div>
+                                    <p>Înfrângeri</p>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">42</div>
+                                    <p>Puncte</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image"><img src="images/Brasov.png" alt="CSM" style="width:80px; height:80px; object-fit:contain;"></div>
+                        <div class="team-header">
+                            <h3>CSM Corona Brașov</h3>
+                            <p>Galben și albastru</p>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-stats">
+                                <div class="stat">
+                                    <div class="stat-value">12</div>
+                                    <p>Victorii</p>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">4</div>
+                                    <p>Înfrângeri</p>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">38</div>
+                                    <p>Puncte</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image"><img src="images/68.png" alt="Steaua" style="width:80px; height:80px; object-fit:contain;"></div>
+                        <div class="team-header">
+                            <h3>Steaua București</h3>
+                            <p>Roșu și albastru</p>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-stats">
+                                <div class="stat">
+                                    <div class="stat-value">10</div>
+                                    <p>Victorii</p>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">6</div>
+                                    <p>Înfrângeri</p>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">34</div>
+                                    <p>Puncte</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz-section" id="quiz">
+            <div class="container">
+                <h2>Quiz Interactiv: Cât știi despre hochei?</h2>
+                <p class="section-subtitle">Alege răspunsul corect și verifică-ți cunoștințele.</p>
+                <div class="quiz-card">
+                    <p><strong>1. </strong>Câte perioade are un meci standard de hochei?</p>
+                    <label><input type="radio" name="q1" value="94"> 2</label>
+                    <label><input type="radio" name="q1" value="95"> 3</label>
+                    <label><input type="radio" name="q1" value="96"> 4</label>
+                </div>
+                <div class="quiz-card">
+                    <p><strong>2. </strong>Cum se numește trofeul câștigat în NHL?</p>
+                    <label><input type="radio" name="q2" value="92"> Cupa Stanley</label>
+                    <label><input type="radio" name="q2" value="93"> Cupa Campionilor</label>
+                    <label><input type="radio" name="q2" value="97"> Cupa Mondială</label>
+                </div>
+                <div class="quiz-result" id="quizResult"></div>
+                <button class="btn primary" id="quizCheckBtn">Verifică răspunsurile</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Hochei pe Gheață.</p>
+            <nav class="footer-nav">
+                <a href="index.html">Acasă</a>
+                <a href="learn.html">Învață</a>
+                <a href="history.html">Istorie</a>
+                <a href="professional.html">Profesional</a>
+                <a href="teams.html">Echipe</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
